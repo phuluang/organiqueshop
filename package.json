@@ -1,0 +1,32 @@
+{
+  "name": "organiqueshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-stylus": "^2.0.6"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.7.1",
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.0.6",
+    "gulp-uglify": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phuluang/organiqueshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phuluang/organiqueshop/issues"
+  },
+  "homepage": "https://github.com/phuluang/organiqueshop#readme"
+}
