@@ -710,3 +710,6 @@ h2.price {
 	min-width: 50px;
 }
 
+.breadcrumb {
+  background-color: #f00;
+}
