@@ -5,6 +5,7 @@ var gulp          = require('gulp');
 var stylus        = require('gulp-stylus');
 var concat        = require('gulp-concat');
 var autoprefixer  = require('autoprefixer-stylus');
+var browserSync   = require('browser-sync').create();
 
 gulp.task('css', function () {
   gulp.src([
@@ -27,4 +28,10 @@ gulp.task('watch', function() {
     gulp.watch('./catalog/view/theme/organiqueshop/stylesheet/*.styl', ['css']);
 });
 
-gulp.task('default', ['css', 'watch']);
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        proxy: 'http://organiqueshop2:8888'
+    });
+});
+
+gulp.task('default', ['css', 'watch', 'browser-sync']);
