@@ -1,8 +1,20 @@
+html
+  font-size 1em
+  font-family "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
 body
   background white url('../image/bg.jpg') no-repeat fixed center top
   background-size cover
-  font-family "Helvetica Neue",Helvetica,Arial,sans-serif
-  font-size 14px
+  set-font-size(14px)
+  color c-gray
+select.form-control, textarea.form-control, input[type="text"].form-control,
+input[type="password"].form-control, input[type="datetime"].form-control,
+input[type="datetime-local"].form-control, input[type="date"].form-control,
+input[type="month"].form-control, input[type="time"].form-control,
+input[type="week"].form-control, input[type="number"].form-control,
+input[type="email"].form-control, input[type="url"].form-control,
+input[type="search"].form-control, input[type="tel"].form-control,
+input[type="color"].form-control
+  set-font-size(14px)
 
 #wrapper.container
   background rgba(255,255,255,0.9)
@@ -12,7 +24,7 @@ body
   border-radius border-radius-base
 
 header.top-header
-  padding-top 20px
+  padding-top 15px
 
 #logo
   float left
@@ -27,14 +39,54 @@ header.top-header
 #menu
   background c-blue
   border 0
+  border-radius border-radius-base
+  @media (min-width: screen-lg-min)
+    float right
   .nav
-    li
-      a
+    >li
+      &:hover
+        background c-dark-blue
+      >a
         text-shadow none
+        set-font-size(14px)
+        font-weight 600
+        padding 15px 20px
+        text-transform uppercase
+        &:hover
+          background c-dark-blue
+    .dropdown-menu
+      border 0
+      padding 0
+      border-radius 0
+      min-width 300px
+      background c-dark-blue
+      a
+        color white
+        font-weight 600
+        display block
+        padding 15px 20px
+        &:hover
+          color white
+          background darken(c-blue,30%)
 .owl-wrapper-outer
   border 0
   box-shadow none
 
+#search
+  .btn.btn-lg
+    background white
+    padding-left 15px
+    padding-right 15px
+  .form-control
+    border-color c-light-gray
+    &:focus
+      box-shadow none
+      border-color c-blue
+
 //Form
+.btn-lg
+  border-radius border-radius-base
 .form-control
-  background white
+  box-shadow none
+  &.input-lg
+    border-radius border-radius-base

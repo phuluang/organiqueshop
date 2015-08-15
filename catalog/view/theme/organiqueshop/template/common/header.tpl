@@ -27,7 +27,9 @@
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+<!-- link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" / -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href="catalog/view/theme/organiqueshop/stylesheet/main.css" rel="stylesheet">
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
@@ -40,7 +42,7 @@
 </head>
 <body class="<?php echo $class; ?>">
   <div id="wrapper" class="container">
-    <nav id="top" class="hide">
+    <nav id="top" class="hidden">
       <div class="container">
         <?php echo $currency; ?>
         <?php echo $language; ?>
@@ -72,7 +74,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4">
-            <div id="logo">
+            <div id="logo" class="">
               <?php if ($logo) { ?>
               <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
               <?php } else { ?>
@@ -89,43 +91,41 @@
           </div>
           <div class="col-sm-4 col-md-4 col-lg-3 col-lg-push-5"><?php echo $search; ?>
           </div>
-          <div class="col-sm-3 hide"><?php echo $cart; ?></div>
+          <div class="col-sm-3 hidden"><?php echo $cart; ?></div>
+          <div class="col-xs-12 col-lg-8">
+            <nav id="menu" class="navbar">
+              <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_menu; ?></span>
+                <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+              </div>
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
+                  <?php if ($categories) { ?>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><?php echo $text_product; ?>&nbsp;&nbsp;<span class="fa fa-caret-down"></span></a>
+                    <div class="dropdown-menu">
+                      <ul class="list-unstyled">
+                           <?php foreach ($categories as $category) { ?>
+                            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+                            <?php } ?>
+                      </ul>
+                    </div>
+                  </li>
+                  <?php } ?>
+                  <?php if ($informations) { ?>
+                  <?php foreach ($informations as $information) { ?>
+                    <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+                  <?php } ?>
+                  <?php } ?>
+                  <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
-    <?php if ($categories) { ?>
-    <div class="container">
-      <nav id="menu" class="navbar">
-        <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_menu; ?></span>
-          <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
-            <?php if ($categories) { ?>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><?php echo $text_product; ?>&nbsp;&nbsp;<span class="fa fa-caret-down"></span></a>
-              <div class="dropdown-menu">
-                <ul class="list-unstyled">
-                     <?php foreach ($categories as $category) { ?>
-                      <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                      <?php } ?>
-                </ul>
-              </div>
-            </li>
-            <?php } ?>
-            <?php if ($informations) { ?>
-            <?php foreach ($informations as $information) { ?>
-              <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
-            <?php } ?>
-            <?php } ?>
-            <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <?php } ?>
 
-    <?php /* back-up
+    <?php /*
     <?php if ($categories) { ?>
     <div class="container">
       <nav id="menu" class="navbar">

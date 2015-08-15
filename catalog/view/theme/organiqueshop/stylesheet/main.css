@@ -710,21 +710,45 @@ h2.price {
 	min-width: 50px;
 }
 
+html {
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 body {
   background: #fff url("../image/bg.jpg") no-repeat fixed center top;
   background-size: cover;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 14px /* add PX (or original value) as backup */;
+  font-size: 0.875rem;
+  color: #566065;
+}
+select.form-control,
+textarea.form-control,
+input[type="text"].form-control,
+input[type="password"].form-control,
+input[type="datetime"].form-control,
+input[type="datetime-local"].form-control,
+input[type="date"].form-control,
+input[type="month"].form-control,
+input[type="time"].form-control,
+input[type="week"].form-control,
+input[type="number"].form-control,
+input[type="email"].form-control,
+input[type="url"].form-control,
+input[type="search"].form-control,
+input[type="tel"].form-control,
+input[type="color"].form-control {
+  font-size: 14px /* add PX (or original value) as backup */;
+  font-size: 0.875rem;
 }
 #wrapper.container {
   background: rgba(255,255,255,0.9);
   padding: 0;
   margin-top: 30px;
   margin-bottom: 30px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 header.top-header {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 #logo {
   float: left;
@@ -740,14 +764,66 @@ header.top-header {
 #menu {
   background: #25aae1;
   border: 0;
+  border-radius: 3px;
 }
-#menu .nav li a {
+@media (min-width: 1200px) {
+  #menu {
+    float: right;
+  }
+}
+#menu .nav >li:hover {
+  background: #1b92c4;
+}
+#menu .nav >li >a {
   text-shadow: none;
+  font-size: 14px /* add PX (or original value) as backup */;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+#menu .nav >li >a:hover {
+  background: #1b92c4;
+}
+#menu .nav .dropdown-menu {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  min-width: 300px;
+  background: #1b92c4;
+}
+#menu .nav .dropdown-menu a {
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  padding: 15px 20px;
+}
+#menu .nav .dropdown-menu a:hover {
+  color: #fff;
+  background: #1679a1;
 }
 .owl-wrapper-outer {
   border: 0;
   box-shadow: none;
 }
-.form-control {
+#search .btn.btn-lg {
   background: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#search .form-control {
+  border-color: #b9c0c4;
+}
+#search .form-control:focus {
+  box-shadow: none;
+  border-color: #25aae1;
+}
+.btn-lg {
+  border-radius: 3px;
+}
+.form-control {
+  box-shadow: none;
+}
+.form-control.input-lg {
+  border-radius: 3px;
 }
