@@ -716,31 +716,38 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
-body #wrapper.container {
+#wrapper.container {
   background: rgba(255,255,255,0.9);
   padding: 0;
   margin-top: 30px;
   margin-bottom: 30px;
+  border-radius: 2px;
 }
-body #logo {
+header.top-header {
+  padding-top: 20px;
+}
+#logo {
   float: left;
   margin-right: 10px;
 }
-body .brand-text {
+.brand-text {
   float: left;
   margin-bottom: 20px;
 }
-body .brand-text h2 {
+.brand-text h2 {
   margin-top: 12px;
 }
-body #menu {
+#menu {
   background: #25aae1;
   border: 0;
 }
-body #menu .nav li a {
+#menu .nav li a {
   text-shadow: none;
 }
-body .owl-wrapper-outer {
+.owl-wrapper-outer {
   border: 0;
   box-shadow: none;
+}
+.form-control {
+  background: #fff;
 }

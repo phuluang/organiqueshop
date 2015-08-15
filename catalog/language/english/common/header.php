@@ -1,6 +1,8 @@
 <?php
 // Text
 $_['text_home']          = 'Home';
+$_['text_product']       = 'Product';
+$_['text_menu']          = 'Menu';
 $_['text_wishlist']      = 'Wish List (%s)';
 $_['text_shopping_cart'] = 'Shopping Cart';
 $_['text_category']      = 'Categories';
@@ -14,3 +16,4 @@ $_['text_logout']        = 'Logout';
 $_['text_checkout']      = 'Checkout';
 $_['text_search']        = 'Search';
 $_['text_all']           = 'Show All';
+$_['text_contact']       = 'Contact Us';

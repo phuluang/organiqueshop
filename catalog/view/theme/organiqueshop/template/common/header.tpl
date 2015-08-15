@@ -40,7 +40,7 @@
 </head>
 <body class="<?php echo $class; ?>">
   <div id="wrapper" class="container">
-    <nav id="top">
+    <nav id="top" class="hide">
       <div class="container">
         <?php echo $currency; ?>
         <?php echo $language; ?>
@@ -68,10 +68,10 @@
         </div>
       </div>
     </nav>
-    <header>
+    <header class="top-header">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4">
             <div id="logo">
               <?php if ($logo) { ?>
               <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
@@ -87,12 +87,45 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-3"><?php echo $search; ?>
+          <div class="col-sm-4 col-md-4 col-lg-3 col-lg-push-5"><?php echo $search; ?>
           </div>
-          <div class="col-sm-3"><?php echo $cart; ?></div>
+          <div class="col-sm-3 hide"><?php echo $cart; ?></div>
         </div>
       </div>
     </header>
+    <?php if ($categories) { ?>
+    <div class="container">
+      <nav id="menu" class="navbar">
+        <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_menu; ?></span>
+          <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
+            <?php if ($categories) { ?>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><?php echo $text_product; ?>&nbsp;&nbsp;<span class="fa fa-caret-down"></span></a>
+              <div class="dropdown-menu">
+                <ul class="list-unstyled">
+                     <?php foreach ($categories as $category) { ?>
+                      <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+                      <?php } ?>
+                </ul>
+              </div>
+            </li>
+            <?php } ?>
+            <?php if ($informations) { ?>
+            <?php foreach ($informations as $information) { ?>
+              <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
+            <?php } ?>
+            <?php } ?>
+            <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <?php } ?>
+
+    <?php /* back-up
     <?php if ($categories) { ?>
     <div class="container">
       <nav id="menu" class="navbar">
@@ -125,3 +158,5 @@
       </nav>
     </div>
     <?php } ?>
+
+    */ ?>
