@@ -1,11 +1,15 @@
 html
   font-size 1em
   font-family "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+
 body
   background white url('../image/bg.jpg') no-repeat fixed center top
   background-size cover
   set-font-size(14px)
   color c-gray
+  padding-top 15px
+  padding-bottom 15px
+
 select.form-control, textarea.form-control, input[type="text"].form-control,
 input[type="password"].form-control, input[type="datetime"].form-control,
 input[type="datetime-local"].form-control, input[type="date"].form-control,
@@ -16,23 +20,26 @@ input[type="search"].form-control, input[type="tel"].form-control,
 input[type="color"].form-control
   set-font-size(14px)
 
-#wrapper.container
-  background rgba(255,255,255,0.9)
-  padding 0
-  margin-top 30px
-  margin-bottom 30px
-  border-radius border-radius-base
+.btn-default.active, .btn-default.focus,
+.btn-default:active, .btn-default:focus,
+.btn-default:hover, .open>.dropdown-toggle.btn-default
+  color c-dark-gray
 
-header.top-header
-  padding-top 15px
+.content-wrapper
+  background rgba(255,255,255,0.9)
+  padding 15px
+  margin-bottom 5px
+  //border-radius border-radius-base
 
 #logo
   float left
-  margin-right 10px
+  margin-right 15px
+  margin-bottom 15px
+  @media (min-width: screen-lg-min)
+    margin-bottom 0
 
 .brand-text
   float left
-  margin-bottom 20px
   h2
     margin-top 12px
 
@@ -40,8 +47,26 @@ header.top-header
   background c-blue
   border 0
   border-radius border-radius-base
+  margin-bottom 0
   @media (min-width: screen-lg-min)
     float right
+  .navbar-header
+    cursor pointer
+    #category
+      text-shadow none
+      text-transform uppercase
+      font-weight 600
+    .btn-navbar
+      background c-blue
+      box-shadow none
+      border 0
+      padding-left 0
+      padding-right 0
+  .navbar-collapse
+    .nav
+      a
+        padding-left 15px
+        padding-right 15px
   .nav
     >li
       &:hover
@@ -54,31 +79,39 @@ header.top-header
         text-transform uppercase
         &:hover
           background c-dark-blue
-    .dropdown-menu
-      border 0
-      padding 0
-      border-radius 0
-      min-width 300px
-      background c-dark-blue
-      a
-        color white
-        font-weight 600
-        display block
-        padding 15px 20px
-        &:hover
+    .dropdown
+      &.open
+        .dropdown-toggle
+          background c-dark-blue
+      .dropdown-menu
+        border 0
+        padding 0
+        border-radius 0
+        min-width 300px
+        background c-dark-blue
+        a
           color white
-          background darken(c-blue,30%)
+          font-weight 600
+          display block
+          padding 15px
+          &:hover
+            color white
+            background darken(c-blue,30%)
+
 .owl-wrapper-outer
   border 0
   box-shadow none
 
 #search
+  margin-bottom 15px
   .btn.btn-lg
     background white
     padding-left 15px
     padding-right 15px
+    border-color c-light-gray2
+    box-shadow none
   .form-control
-    border-color c-light-gray
+    border-color c-light-gray2
     &:focus
       box-shadow none
       border-color c-blue
