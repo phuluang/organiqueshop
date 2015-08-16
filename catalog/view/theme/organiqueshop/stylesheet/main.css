@@ -756,9 +756,9 @@ input[type="color"].form-control {
   min-height: 300px;
 }
 .content-wrapper {
-  background: rgba(255,255,255,0.9);
+  background: #fff;
   padding: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 #logo {
   float: left;
@@ -876,6 +876,24 @@ footer {
 footer .content-wrapper {
   background: #2b3033;
   margin-bottom: 0;
+}
+.fc_carousel {
+  background: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+.fc_carousel .cat-featured-row {
+  margin-right: -3px;
+  margin-left: -3px;
+}
+.fc_carousel .cat-featured-row .cat-item-col {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.fc_carousel .cat-featured-row .cat-item-col .item {
+  background: #fff;
+  margin-bottom: 6px;
 }
 .btn-lg {
   border-radius: 3px;

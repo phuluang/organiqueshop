@@ -1,26 +1,20 @@
 <?php
 class ControllerModuleFccarousel extends Controller {
 	public function index($setting) {
-		
+
 		static $module = 0;
-		
+
 		$this->load->language('module/fccarousel');
 
 		$data['heading_title'] = $this->language->get('heading_title');
 
 		$this->load->model('catalog/category');
 
-		$this->load->model('tool/image');		
-		
+		$this->load->model('tool/image');
+
 		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.carousel.css');
 		$this->document->addStyle('catalog/view/javascript/jquery/owl-carousel/owl.transitions.css');
 		$this->document->addScript('catalog/view/javascript/jquery/owl-carousel/owl.carousel.min.js');
-
-		if (file_exists('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/fccarousel.css')) {
-			$this->document->addStyle('catalog/view/theme/' . $this->config->get('config_template') . '/stylesheet/fccarousel.css');
-		} else {
-			$this->document->addStyle('catalog/view/theme/default/stylesheet/fccarousel.css');
-		}
 
 		$data['name'] = isset($setting['name']) ? $setting['name'] : '';
 		$data['name_as_title'] = isset($setting['name_as_title']) ? $setting['name_as_title'] : 0;
@@ -36,15 +30,15 @@ class ControllerModuleFccarousel extends Controller {
 		if (!$setting['limit']) {
 			$setting['limit'] = 8;
 		}
-		
+
 		$thumb_width = isset($setting['thumb_width']) ? $setting['thumb_width'] : 180;
 		$thumb_height = isset($setting['thumb_height']) ? $setting['thumb_height'] : 180;
-		
+
 		// shuffle carousel items
 		if(isset($setting['shuffle_items']) && $setting['shuffle_items']) {
 			shuffle($setting['categories']);
 		}
-		
+
 		$categories = array_slice($setting['categories'], 0, (int)$setting['limit']);
 
 		foreach ($categories as $category_id) {
@@ -66,7 +60,7 @@ class ControllerModuleFccarousel extends Controller {
 				);
 			}
 		}
-		
+
 		$data['module'] = $module++;
 
 		// check if isset categories
@@ -78,28 +72,28 @@ class ControllerModuleFccarousel extends Controller {
 			}
 		}
 	}
-	
+
 	public function getCategoryPath($category_id){
 		$query = $this->db->query("SELECT category_id, parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $category_id ."' LIMIT 1");
-		if($query->row['category_id']){			
-			$path = $query->row['category_id'];	
+		if($query->row['category_id']){
+			$path = $query->row['category_id'];
 			while($query->row['parent_id']!=0){
-				$query = $this->db->query("SELECT category_id, parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['parent_id'] ."' LIMIT 1");				
+				$query = $this->db->query("SELECT category_id, parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['parent_id'] ."' LIMIT 1");
 				$path = $query->row['category_id'] . "_" . $path;
 			}
 			return $path;
 		}
 		return false;
 	}
-	
+
 	public function getProductCategoryPath($product_id) {
 		$query = $this->db->query("SELECT category_id, parent_id FROM " . DB_PREFIX . "product_to_category WHERE product_id = '" . (int)$product_id . "' LIMIT 1");
 		if($query->row['category_id']){
 			$path = $query->row['category_id'];
-			$query = $this->db->query("SELECT parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['category_id'] . "' AND parent_id != 0");           
+			$query = $this->db->query("SELECT parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['category_id'] . "' AND parent_id != 0");
 			while($query->num_rows){
 				$path = $query->row['parent_id'] . "_" . $path;
-				$query = $this->db->query("SELECT parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['parent_id'] . "' AND parent_id != 0");    
+				$query = $this->db->query("SELECT parent_id FROM " . DB_PREFIX . "category WHERE category_id = '" . $query->row['parent_id'] . "' AND parent_id != 0");
 			}
 			return $path;
 		}

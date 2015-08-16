@@ -28,9 +28,9 @@
 			<div class="panel-body">
 				<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-fpcarousel" class="form-horizontal">
 					<div class="row">
-						<div class="col-sm-6">	
+						<div class="col-sm-6">
 							<div class="row">
-								<div class="col-sm-12">	
+								<div class="col-sm-12">
 									<label class="control-label" for="input-name"><?php echo $entry_name; ?></label>
 									<input type="text" name="name" value="<?php echo $name; ?>" placeholder="<?php echo $entry_name; ?>" id="input-name" class="form-control" />
 									<?php if ($error_name) { ?>
@@ -51,7 +51,7 @@
 										<?php } ?>
 									</select>
 								</div>
-							</div>	
+							</div>
 							<div class="row">
 								<div class="col-sm-12">
 								<label class="control-label" for="input-category">
@@ -99,20 +99,20 @@
 										<option value="1"><?php echo $text_yes; ?></option>
 										<option value="0" selected="selected"><?php echo $text_no; ?></option>
 										<?php } ?>
-									</select>		  
-								</div>		  
+									</select>
+								</div>
 							</div>
 							<div class="row">		  
 								<div class="col-sm-6">
 									<label class="control-label" for="input-limit"><?php echo $entry_limit; ?></label>
-									<input id="input-limit" class="form-control" type="text" name="limit" value="<?php echo $limit; ?>" placeholder="<?php echo $entry_limit; ?>" />			
+									<input id="input-limit" class="form-control" type="text" name="limit" value="<?php echo $limit; ?>" placeholder="<?php echo $entry_limit; ?>" />
 								</div>
 								<div class="col-sm-6">
 									<label class="control-label" for="input-itemspage"><?php echo $entry_itemspage; ?></label>
-									<input id="input-itemspage" class="form-control" type="text" name="itemspage" value="<?php echo $itemspage; ?>" size="3" />			
-								</div>		  
+									<input id="input-itemspage" class="form-control" type="text" name="itemspage" value="<?php echo $itemspage; ?>" size="3" />
+								</div>
 							</div>
-							<div class="row">	
+							<div class="row">
 								<div class="col-sm-6">
 									<label class=" control-label">
 										<span data-toggle="tooltip" title="" data-original-title="<?php echo $help_shuffle_items; ?>"><?php echo $entry_shuffle_items; ?></span>
@@ -125,7 +125,7 @@
 										<option value="1"><?php echo $text_yes; ?></option>
 										<option value="0" selected="selected"><?php echo $text_no; ?></option>
 										<?php } ?>
-									</select>			  
+									</select>
 								</div>
 								<div class="col-sm-6">
 									<label class="control-label" for="input-auto_play">
@@ -139,8 +139,8 @@
 										<option value="1"><?php echo $text_yes; ?></option>
 										<option value="0" selected="selected"><?php echo $text_no; ?></option>
 										<?php } ?>
-									</select>			  
-								</div>		  
+									</select>
+								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
@@ -155,7 +155,7 @@
 										<option value="1"><?php echo $text_yes; ?></option>
 										<option value="0" selected="selected"><?php echo $text_no; ?></option>
 										<?php } ?>
-									</select>			  
+									</select>
 								</div>
 								<div class="col-sm-6">
 									<label class="control-label">
@@ -169,8 +169,8 @@
 										<option value="1"><?php echo $text_yes; ?></option>
 										<option value="0" selected="selected"><?php echo $text_no; ?></option>
 										<?php } ?>
-									</select>			  
-								</div>		  
+									</select>
+								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
@@ -185,7 +185,7 @@
 										<option value="1"><?php echo $text_yes; ?></option>
 										<option value="0" selected="selected"><?php echo $text_no; ?></option>
 										<?php } ?>
-									</select>		  
+									</select>
 								</div>
 								<div class="col-sm-6">
 									<label class="control-label" for="input-thumb_width"><?php echo $entry_thumb_size; ?></label>
@@ -202,11 +202,11 @@
 										  <div class="text-danger"><?php echo $error_thumb_height; ?></div>
 										  <?php } ?>
 										</div>
-									</div>			  
-								</div>		  
+									</div>
+								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-12">	
+								<div class="col-sm-12">
 									<label class="control-label" for="input-status"><?php echo $entry_status; ?></label>
 									<select name="status" id="input-status" class="form-control">
 										<?php if ($status) { ?>
@@ -243,13 +243,13 @@ $('input[name=\'category\']').autocomplete({
 	},
 	select: function(item) {
 		$('input[name=\'category\']').val('');
-		
+
 		$('#fccarousel-category' + item['value']).remove();
-		
-		$('#fccarousel-category').append('<div id="fccarousel-category' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="categories[]" value="' + item['value'] + '" /></div>');	
+
+		$('#fccarousel-category').append('<div id="fccarousel-category' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="categories[]" value="' + item['value'] + '" /></div>');
 	}
 });
-	
+
 $('#fccarousel-category').delegate('.fa-minus-circle', 'click', function() {
 	$(this).parent().remove();
 });
