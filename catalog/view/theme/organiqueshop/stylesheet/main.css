@@ -742,13 +742,18 @@ input[type="color"].form-control {
   font-size: 14px /* add PX (or original value) as backup */;
   font-size: 0.875rem;
 }
+.btn-default {
+  color: #566065;
+}
 .btn-default.active,
 .btn-default.focus,
 .btn-default:active,
 .btn-default:focus,
-.btn-default:hover,
-.open>.dropdown-toggle.btn-default {
-  color: #495256;
+.btn-default:hover {
+  color: #2b3033;
+}
+#content {
+  min-height: 300px;
 }
 .content-wrapper {
   background: rgba(255,255,255,0.9);
@@ -835,9 +840,15 @@ input[type="color"].form-control {
   color: #fff;
   background: #1679a1;
 }
-.owl-wrapper-outer {
+.owl-carousel {
+  margin-bottom: 5px !important;
+}
+.owl-carousel .owl-wrapper-outer {
   border: 0;
   box-shadow: none;
+}
+.owl-carousel .owl-controls .owl-pagination {
+  top: 0;
 }
 #search {
   margin-bottom: 15px;
@@ -855,6 +866,16 @@ input[type="color"].form-control {
 #search .form-control:focus {
   box-shadow: none;
   border-color: #25aae1;
+}
+footer {
+  background: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+footer .content-wrapper {
+  background: #2b3033;
+  margin-bottom: 0;
 }
 .btn-lg {
   border-radius: 3px;

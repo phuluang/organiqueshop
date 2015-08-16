@@ -20,16 +20,21 @@ input[type="search"].form-control, input[type="tel"].form-control,
 input[type="color"].form-control
   set-font-size(14px)
 
+.btn-default
+  color c-gray
+
 .btn-default.active, .btn-default.focus,
 .btn-default:active, .btn-default:focus,
-.btn-default:hover, .open>.dropdown-toggle.btn-default
-  color c-dark-gray
+.btn-default:hover
+  color c-dark-gray2
+
+#content
+  min-height 300px
 
 .content-wrapper
   background rgba(255,255,255,0.9)
   padding 15px
   margin-bottom 5px
-  //border-radius border-radius-base
 
 #logo
   float left
@@ -98,9 +103,14 @@ input[type="color"].form-control
             color white
             background darken(c-blue,30%)
 
-.owl-wrapper-outer
-  border 0
-  box-shadow none
+.owl-carousel
+  margin-bottom 5px !important
+  .owl-wrapper-outer
+    border 0
+    box-shadow none
+  .owl-controls
+    .owl-pagination
+      top 0
 
 #search
   margin-bottom 15px
@@ -115,6 +125,15 @@ input[type="color"].form-control
     &:focus
       box-shadow none
       border-color c-blue
+
+footer
+  background 0
+  border 0
+  margin 0
+  padding 0
+  .content-wrapper
+    background c-dark-gray2
+    margin-bottom 0
 
 //Form
 .btn-lg

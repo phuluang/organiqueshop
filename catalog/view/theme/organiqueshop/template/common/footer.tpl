@@ -1,5 +1,6 @@
   <footer>
     <div class="container">
+      <div class="content-wrapper">
       <div class="row">
         <?php if ($informations) { ?>
         <div class="col-sm-3">
@@ -40,6 +41,7 @@
       </div>
       <hr>
       <p><?php echo $powered; ?></p>
+    </div>
     </div>
   </footer>
 <!--
