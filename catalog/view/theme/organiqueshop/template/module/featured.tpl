@@ -1,3 +1,4 @@
+<div class="content-wrapper">
 <h3><?php echo $heading_title; ?></h3>
 <div class="row">
   <?php foreach ($products as $product) { ?>
@@ -39,4 +40,5 @@
     </div>
   </div>
   <?php } ?>
+</div>
 </div>

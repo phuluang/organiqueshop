@@ -4,6 +4,7 @@ $_['text_information']  = 'Information';
 $_['text_service']      = 'Customer Service';
 $_['text_extra']        = 'Extras';
 $_['text_contact']      = 'Contact Us';
+$_['text_follow_us']    = 'Follow Us';
 $_['text_return']       = 'Returns';
 $_['text_sitemap']      = 'Site Map';
 $_['text_manufacturer'] = 'Brands';

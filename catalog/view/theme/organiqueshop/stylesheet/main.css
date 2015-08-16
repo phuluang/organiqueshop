@@ -760,6 +760,11 @@ input[type="color"].form-control {
   padding: 15px;
   margin-bottom: 6px;
 }
+.content-wrapper.cat-wrapper {
+  background: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 #logo {
   float: left;
   margin-right: 15px;
@@ -842,13 +847,18 @@ input[type="color"].form-control {
 }
 .owl-carousel {
   margin-bottom: 5px !important;
+  background: transparent !important;
 }
 .owl-carousel .owl-wrapper-outer {
   border: 0;
   box-shadow: none;
 }
+.owl-carousel .owl-controls {
+  bottom: 0;
+  height: 0;
+}
 .owl-carousel .owl-controls .owl-pagination {
-  top: 0;
+  top: -30px;
 }
 #search {
   margin-bottom: 15px;
@@ -872,10 +882,67 @@ footer {
   border: 0;
   margin: 0;
   padding: 0;
+  color: #dce0e1;
+}
+footer a {
+  color: #dce0e1;
+}
+footer a:hover {
+  color: #fff;
 }
 footer .content-wrapper {
   background: #2b3033;
   margin-bottom: 0;
+}
+footer .content-wrapper h5 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px /* add PX (or original value) as backup */;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+footer .content-wrapper .facebook-plugin {
+  margin-top: 5px;
+}
+footer .content-wrapper .follow-us .fa {
+  font-size: 36px /* add PX (or original value) as backup */;
+  font-size: 2.25rem;
+  margin-right: 5px;
+}
+footer .content-wrapper .contact-item {
+  position: relative;
+  margin-bottom: 15px;
+}
+footer .content-wrapper .contact-item .icon {
+  position: absolute;
+}
+footer .content-wrapper .contact-item .icon .fa-map-marker {
+  font-size: 18px /* add PX (or original value) as backup */;
+  font-size: 1.125rem;
+  padding-left: 2px;
+}
+footer .content-wrapper .contact-item .icon .fa-envelope {
+  font-size: 16px /* add PX (or original value) as backup */;
+  font-size: 1rem;
+}
+footer .content-wrapper .contact-item .icon .fa-phone {
+  font-size: 16px /* add PX (or original value) as backup */;
+  font-size: 1rem;
+  padding-left: 2px;
+}
+footer .content-wrapper .contact-item .info {
+  padding-left: 30px;
+}
+footer .content-wrapper .contact-item .info address {
+  margin: 0;
+}
+.powered {
+  background: #222628;
+}
+.powered p {
+  margin: 0;
+  padding: 15px 0;
 }
 .fc_carousel {
   background: 0;
@@ -883,17 +950,31 @@ footer .content-wrapper {
   padding-bottom: 0;
   margin: 0;
 }
-.fc_carousel .cat-featured-row {
-  margin-right: -3px;
-  margin-left: -3px;
+.fc_carousel .item {
+  background: #fff;
+  margin-bottom: 6px;
 }
-.fc_carousel .cat-featured-row .cat-item-col {
+.row-3px {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+.col-3px {
   padding-left: 3px;
   padding-right: 3px;
 }
-.fc_carousel .cat-featured-row .cat-item-col .item {
+.breadcrumb {
+  border: 0;
+  border-radius: 0;
   background: #fff;
   margin-bottom: 6px;
+}
+#column-left .list-group .list-group-item {
+  border-radius: 0;
+  border: 0;
+}
+.product-thumb {
+  background: #fff;
+  border: 0;
 }
 .btn-lg {
   border-radius: 3px;

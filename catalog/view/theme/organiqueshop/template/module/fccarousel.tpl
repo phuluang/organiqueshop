@@ -1,8 +1,8 @@
 <div class="content-wrapper fc_carousel" id="fc_carousel_<?php echo $module; ?>">
   <div class="row" id="featured_category_carousel_<?php echo $module; ?>">
-      <div class="row cat-featured-row">
+      <div class="row row-3px">
         <?php foreach ($categories as $category) { ?>
-        <div class="col-xs-6 col-md-3 cat-item-col">
+        <div class="col-xs-6 col-md-3 col-3px">
           <div class="item">
       		  <div class="category-layout">
         			<div class="category-thumb transition">

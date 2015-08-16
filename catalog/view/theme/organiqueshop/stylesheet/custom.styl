@@ -36,6 +36,10 @@ input[type="color"].form-control
   background white
   padding 15px
   margin-bottom 6px
+  &.cat-wrapper
+    background 0
+    padding-top 0
+    padding-bottom 0
 
 #logo
   float left
@@ -106,12 +110,15 @@ input[type="color"].form-control
 
 .owl-carousel
   margin-bottom 5px !important
+  background transparent !important
   .owl-wrapper-outer
     border 0
     box-shadow none
   .owl-controls
+    bottom 0
+    height 0
     .owl-pagination
-      top 0
+      top -30px
 
 #search
   margin-bottom 15px
@@ -132,25 +139,80 @@ footer
   border 0
   margin 0
   padding 0
+  color c-text-inverse
+  a
+    color c-text-inverse
+    &:hover
+      color white
   .content-wrapper
     background c-dark-gray2
     margin-bottom 0
+    h5
+      margin-top 5px
+      margin-bottom 15px
+      set-font-size(16px)
+      text-transform uppercase
+      font-weight 600
+    .facebook-plugin
+      margin-top 5px
+    .follow-us
+      .fa
+        set-font-size(36px)
+        margin-right 5px
+    .contact-item
+      position relative
+      margin-bottom 15px
+      .icon
+        position absolute
+        .fa-map-marker
+          set-font-size(18px)
+          padding-left 2px
+        .fa-envelope
+          set-font-size(16px)
+        .fa-phone
+          set-font-size(16px)
+          padding-left 2px
+      .info
+        padding-left 30px
+        address
+          margin 0
+.powered
+  background c-dark-gray3
+  p
+    margin 0
+    padding 15px 0
 
 .fc_carousel
   background 0
   padding-top 0
   padding-bottom 0
   margin 0
-  .cat-featured-row
-    margin-right -3px
-    margin-left -3px
-    .cat-item-col
-      padding-left 3px
-      padding-right 3px
-      .item
-        background white
-        margin-bottom 6px
+  .item
+    background white
+    margin-bottom 6px
 
+.row-3px
+  margin-left -3px
+  margin-right -3px
+.col-3px
+  padding-left 3px
+  padding-right 3px
+
+.breadcrumb
+  border 0
+  border-radius 0
+  background white
+  margin-bottom 6px
+
+#column-left
+  .list-group
+    .list-group-item
+      border-radius 0
+      border 0
+
+.product-thumb
+  background white
+  border 0
 //Form
 .btn-lg
   border-radius border-radius-base
