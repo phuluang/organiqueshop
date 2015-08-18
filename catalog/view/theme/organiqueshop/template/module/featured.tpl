@@ -1,5 +1,7 @@
-<div class="content-wrapper">
-<h3><?php echo $heading_title; ?></h3>
+<div class="content-wrapper featured-header">
+  <h3><?php echo $heading_title; ?></h3>
+</div>
+<div class="content-wrapper featured-wrapper">
 <div class="row">
   <?php foreach ($products as $product) { ?>
   <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">

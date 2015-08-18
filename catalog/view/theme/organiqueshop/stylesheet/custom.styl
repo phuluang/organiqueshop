@@ -10,6 +10,28 @@ body
   padding-top 15px
   padding-bottom 15px
 
+a
+  color c-blue
+  &:hover
+    color c-dark-blue
+
+h1, h2, h3, h4, h5, h6
+  color c-dark-gray2
+  text-transform uppercase
+  font-weight 400
+
+h1
+  margin-top 0
+  font-weight 400
+  set-font-size(28px)
+
+h2
+  margin-top 0
+  set-font-size(28px)
+
+h3
+  set-font-size(20px)
+
 select.form-control, textarea.form-control, input[type="text"].form-control,
 input[type="password"].form-control, input[type="datetime"].form-control,
 input[type="datetime-local"].form-control, input[type="date"].form-control,
@@ -19,6 +41,7 @@ input[type="email"].form-control, input[type="url"].form-control,
 input[type="search"].form-control, input[type="tel"].form-control,
 input[type="color"].form-control
   set-font-size(14px)
+  color c-dark-gray2
 
 .btn-default
   color c-gray
@@ -40,6 +63,7 @@ input[type="color"].form-control
     background 0
     padding-top 0
     padding-bottom 0
+    margin-bottom 0
 
 #logo
   float left
@@ -52,6 +76,9 @@ input[type="color"].form-control
   float left
   h2
     margin-top 12px
+    set-font-size(28px)
+    text-transform capitalize
+    font-weight 400
 
 #menu
   background c-blue
@@ -119,6 +146,14 @@ input[type="color"].form-control
     height 0
     .owl-pagination
       top -30px
+      .owl-page
+        span
+          border 2px solid transparent
+          background white
+          box-shadow none
+        &.active
+          span
+            background c-blue
 
 #search
   margin-bottom 15px
@@ -150,9 +185,8 @@ footer
     h5
       margin-top 5px
       margin-bottom 15px
-      set-font-size(16px)
-      text-transform uppercase
-      font-weight 600
+      set-font-size(20px)
+      font-weight 400
     .facebook-plugin
       margin-top 5px
     .follow-us
@@ -203,16 +237,45 @@ footer
   border-radius 0
   background white
   margin-bottom 6px
+  > li
+    padding-left 15px
+    padding-right 15px
+    &::after
+      border-color c-light-gray2
 
 #column-left
   .list-group
+    a
+      color c-dark-gray2
     .list-group-item
       border-radius 0
       border 0
+      text-shadow none
+      padding 15px
+      &.active
+        background c-blue
+        color white
 
 .product-thumb
   background white
-  border 0
+  border 2px solid white
+  margin-bottom 15px
+  &:hover
+    border 2px solid c-blue
+  h4
+    text-transform none
+    a
+     color c-dark-gray2
+
+.featured-header
+  margin-bottom 0
+  border-left 6px solid c-blue
+  h3
+    margin 0
+
+.featured-wrapper
+  padding-bottom 0
+
 //Form
 .btn-lg
   border-radius border-radius-base
@@ -220,3 +283,18 @@ footer
   box-shadow none
   &.input-lg
     border-radius border-radius-base
+//Button
+.btn-primary
+  border-radius border-radius-base
+  border 0
+  background c-blue
+  box-shadow none
+  text-shadow none
+  set-font-size(16px)
+  text-transform uppercase
+  font-weight 400
+  height 40px
+  padding-left 20px
+  padding-right 20px
+  &:hover
+    background c-dark-blue

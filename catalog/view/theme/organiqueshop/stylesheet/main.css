@@ -723,6 +723,37 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+a {
+  color: #25aae1;
+}
+a:hover {
+  color: #1b92c4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2b3033;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+h1 {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 28px /* add PX (or original value) as backup */;
+  font-size: 1.75rem;
+}
+h2 {
+  margin-top: 0;
+  font-size: 28px /* add PX (or original value) as backup */;
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 20px /* add PX (or original value) as backup */;
+  font-size: 1.25rem;
+}
 select.form-control,
 textarea.form-control,
 input[type="text"].form-control,
@@ -741,6 +772,7 @@ input[type="tel"].form-control,
 input[type="color"].form-control {
   font-size: 14px /* add PX (or original value) as backup */;
   font-size: 0.875rem;
+  color: #2b3033;
 }
 .btn-default {
   color: #566065;
@@ -764,6 +796,7 @@ input[type="color"].form-control {
   background: 0;
   padding-top: 0;
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 #logo {
   float: left;
@@ -780,6 +813,10 @@ input[type="color"].form-control {
 }
 .brand-text h2 {
   margin-top: 12px;
+  font-size: 28px /* add PX (or original value) as backup */;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  font-weight: 400;
 }
 #menu {
   background: #25aae1;
@@ -860,6 +897,14 @@ input[type="color"].form-control {
 .owl-carousel .owl-controls .owl-pagination {
   top: -30px;
 }
+.owl-carousel .owl-controls .owl-pagination .owl-page span {
+  border: 2px solid transparent;
+  background: #fff;
+  box-shadow: none;
+}
+.owl-carousel .owl-controls .owl-pagination .owl-page.active span {
+  background: #25aae1;
+}
 #search {
   margin-bottom: 15px;
 }
@@ -897,10 +942,9 @@ footer .content-wrapper {
 footer .content-wrapper h5 {
   margin-top: 5px;
   margin-bottom: 15px;
-  font-size: 16px /* add PX (or original value) as backup */;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-size: 20px /* add PX (or original value) as backup */;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 footer .content-wrapper .facebook-plugin {
   margin-top: 5px;
@@ -968,13 +1012,49 @@ footer .content-wrapper .contact-item .info address {
   background: #fff;
   margin-bottom: 6px;
 }
+.breadcrumb > li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.breadcrumb > li::after {
+  border-color: #dce0e1;
+}
+#column-left .list-group a {
+  color: #2b3033;
+}
 #column-left .list-group .list-group-item {
   border-radius: 0;
   border: 0;
+  text-shadow: none;
+  padding: 15px;
+}
+#column-left .list-group .list-group-item.active {
+  background: #25aae1;
+  color: #fff;
 }
 .product-thumb {
   background: #fff;
-  border: 0;
+  border: 2px solid #fff;
+  margin-bottom: 15px;
+}
+.product-thumb:hover {
+  border: 2px solid #25aae1;
+}
+.product-thumb h4 {
+  text-transform: none;
+}
+.product-thumb h4 a {
+  color: #2b3033;
+}
+.featured-header {
+  margin-bottom: 0;
+  border-left: 6px solid #25aae1;
+}
+.featured-header h3 {
+  margin: 0;
+}
+.featured-wrapper {
+  padding-bottom: 0;
 }
 .btn-lg {
   border-radius: 3px;
@@ -984,4 +1064,21 @@ footer .content-wrapper .contact-item .info address {
 }
 .form-control.input-lg {
   border-radius: 3px;
+}
+.btn-primary {
+  border-radius: 3px;
+  border: 0;
+  background: #25aae1;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 16px /* add PX (or original value) as backup */;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn-primary:hover {
+  background: #1b92c4;
 }
