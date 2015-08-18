@@ -102,7 +102,7 @@
                 <ul class="nav navbar-nav">
                   <li><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li>
                   <?php if ($categories) { ?>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><?php echo $text_product; ?>&nbsp;&nbsp;<span class="fa fa-caret-down"></span></a>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $text_product; ?>&nbsp;&nbsp;<span class="fa fa-caret-down"></span></a>
                     <div class="dropdown-menu">
                       <ul class="list-unstyled">
                            <?php foreach ($categories as $category) { ?>
