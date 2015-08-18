@@ -41,6 +41,7 @@
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo $class; ?>">
+  <div id="page">
   <div class="container">
   <div class="content-wrapper">
     <!-- nav id="top">
