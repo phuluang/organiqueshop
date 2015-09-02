@@ -45,7 +45,7 @@ function getURLVar(key) {
 
 $(document).ready(function() {
 	// Sticky scroll
-	$("#sticker").sticky({topSpacing:5});
+	$("#sticker").sticky({topSpacing:6});
 
 	// Paperfold Effect
 	$(function() {
