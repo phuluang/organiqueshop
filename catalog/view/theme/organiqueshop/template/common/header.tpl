@@ -26,9 +26,11 @@
 <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/paperfold.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/jquery.sticky.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-<!-- link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" / -->
+<!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" /> -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href="catalog/view/theme/organiqueshop/stylesheet/main.css" rel="stylesheet">
 <?php foreach ($styles as $style) { ?>
@@ -44,7 +46,7 @@
   <div id="page">
   <div class="container">
   <div class="content-wrapper">
-    <!-- nav id="top">
+    <!-- <nav id="top">
       <div class="container">
         <?php echo $currency; ?>
         <?php echo $language; ?>
@@ -71,7 +73,7 @@
           </ul>
         </div>
       </div>
-    </nav -->
+    </nav> -->
     <header class="top-header">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4">

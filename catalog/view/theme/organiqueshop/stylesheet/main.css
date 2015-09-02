@@ -1089,9 +1089,15 @@ footer .content-wrapper .contact-item .info address {
   text-shadow: none;
   padding: 15px;
 }
+#column-left .list-group .list-group-item:hover {
+  background: #eeeff0;
+}
 #column-left .list-group .list-group-item.active {
   background: #25aae1;
   color: #fff;
+}
+.cat-list-wrapper {
+  min-height: 600px;
 }
 .product-thumb {
   background: #fff;
@@ -1100,6 +1106,16 @@ footer .content-wrapper .contact-item .info address {
 }
 .product-thumb:hover {
   border: 2px solid #25aae1;
+}
+.product-thumb .price {
+  color: #495256;
+}
+.product-thumb .image a:hover {
+  opacity: 1;
+}
+.product-thumb .caption {
+  min-height: 0;
+  text-align: center;
 }
 .product-thumb h4 {
   text-transform: none;

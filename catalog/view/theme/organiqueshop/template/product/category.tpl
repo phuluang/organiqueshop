@@ -15,7 +15,7 @@
     <?php $class = 'col-sm-12 col-3px'; ?>
     <?php } ?>
     <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
-      <div class="content-wrapper">
+      <div class="content-wrapper cat-list-wrapper">
       <h2><?php echo $heading_title; ?></h2>
       <?php if ($thumb || $description) { ?>
       <div class="row">
@@ -55,10 +55,10 @@
       <?php } ?>
       <?php } ?>
       <?php if ($products) { ?>
-      <!-- p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p -->
+      <!-- <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p> -->
       <div class="row">
         <div class="col-md-4">
-          <div class="btn-group hidden-xs">
+          <div class="btn-group hidden-xs hidden">
             <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
             <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
           </div>
@@ -95,13 +95,13 @@
       <br />
       <div class="row">
         <?php foreach ($products as $product) { ?>
-        <div class="product-layout product-list col-xs-12">
+        <div class="product-layout product-grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <div class="product-thumb">
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             <div>
               <div class="caption">
                 <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-                <p><?php echo $product['description']; ?></p>
+                <!-- <p><?php echo $product['description']; ?></p> -->
                 <?php if ($product['rating']) { ?>
                 <div class="rating">
                   <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -126,11 +126,11 @@
                 </p>
                 <?php } ?>
               </div>
-              <!-- div class="button-group">
+              <!-- <div class="button-group">
                 <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $button_cart; ?></span></button>
                 <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
                 <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
-              </div -->
+              </div> -->
             </div>
           </div>
         </div>

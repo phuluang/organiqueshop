@@ -44,6 +44,15 @@ function getURLVar(key) {
 }
 
 $(document).ready(function() {
+	// Sticky scroll
+	$("#sticker").sticky({topSpacing:5});
+
+	// Paperfold Effect
+	$(function() {
+		var paperfold = $('.paperfold-target').paperfold();
+		$('.paperfold-toggle').click(paperfold.toggle);
+	});
+
 	// Adding the clear Fix
 	cols1 = $('#column-right, #column-left').length;
 

@@ -318,9 +318,14 @@ footer
       border 0
       text-shadow none
       padding 15px
+      &:hover
+        background c-light-gray3
       &.active
         background c-blue
         color white
+
+.cat-list-wrapper
+  min-height 600px
 
 .product-thumb
   background white
@@ -328,6 +333,15 @@ footer
   margin-bottom 15px
   &:hover
     border 2px solid c-blue
+  .price
+    color c-dark-gray
+  .image
+    a
+      &:hover
+        opacity 1
+  .caption
+    min-height 0
+    text-align center
   h4
     text-transform none
     a
