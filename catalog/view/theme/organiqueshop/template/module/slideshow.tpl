@@ -15,7 +15,7 @@ $('#slideshow<?php echo $module; ?>').owlCarousel({
 	autoPlay: 3000,
 	singleItem: true,
 	navigation: true,
-	navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+	navigationText: ['<i class="fa fa-angle-left fa-5x"></i>', '<i class="fa fa-angle-right fa-5x"></i>'],
 	pagination: true
 });
 --></script>
