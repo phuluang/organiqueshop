@@ -204,6 +204,17 @@ input[type="color"].form-control
 .owl-carousel
   margin-bottom 5px !important
   background transparent !important
+  .owl-prev
+    left 0 !important
+  .owl-next
+    right 0 !important
+  .owl-prev, .owl-next
+    text-shadow none !important
+    background white
+    padding 15px
+    top 41% !important
+    i.fa
+      margin-top 0
   .owl-wrapper-outer
     border 0
     box-shadow none
@@ -362,7 +373,37 @@ footer
   .contact-info-icon
     margin-right 10px
     set-font-size(16px)
+  .control-label
+    set-font-size(14px)
+    margin-bottom 5px
+  .branches
+    margin-top 40px
+    margin-bottom 40px
+    .branches-info
+      padding-left 30px
+      padding-top 5px
+    .panel-group
+      .panel
+        border 0
+        box-shadow none
+        .panel-heading
+          background c-light-gray3
+          border 0
+          padding 0
+          a
+            display block
+            padding 10px 15px
+            color c-gray
+            .fa
+              margin-right 10px
+            &.collapsed
+              .fa-caret-down::before
+                content "\f0da"
+        .panel-body
+          border 0
+          background c-light-gray3
   .map
+    margin-top 10px
     iframe
       width 100%
       height 300px
@@ -378,6 +419,7 @@ footer
 .form-control
   border-radius border-radius-base
   box-shadow none
+  border 1px solid c-light-gray
   &:focus
     box-shadow none
     border-color c-blue

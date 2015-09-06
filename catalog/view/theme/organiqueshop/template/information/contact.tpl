@@ -38,7 +38,7 @@
               </div>
               <div class="col-sm-12">
                 <!-- <strong><?php echo $text_telephone; ?></strong><br> -->
-                <i class="contact-info-icon fa fa-phone"></i><strong><?php echo $telephone; ?></strong><br />
+                <i class="contact-info-icon fa fa-phone"></i><strong><?php echo $telephone; ?></strong>
                 <br />
                 <?php if ($fax) { ?>
                 <strong><?php echo $text_fax; ?></strong><br>
@@ -59,20 +59,22 @@
           </div>
         </div>
       <?php if ($locations) { ?>
+        <div class="branches">
         <h3><?php echo $text_store; ?></h3>
         <div class="panel-group" id="accordion">
           <?php foreach ($locations as $location) { ?>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"><a href="#collapse-location<?php echo $location['location_id']; ?>" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><?php echo $location['name']; ?> <i class="fa fa-caret-down"></i></a></h4>
+              <a href="#collapse-location<?php echo $location['location_id']; ?>" class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion"><i class="fa fa-caret-down"></i><strong><?php echo $location['name']; ?></strong></a>
             </div>
             <div class="panel-collapse collapse" id="collapse-location<?php echo $location['location_id']; ?>">
-              <div class="panel-body">
+              <div class="panel-body branches-info">
                 <div class="row">
                   <?php if ($location['image']) { ?>
-                  <div class="col-sm-3"><img src="<?php echo $location['image']; ?>" alt="<?php echo $location['name']; ?>" title="<?php echo $location['name']; ?>" class="img-thumbnail" /></div>
+                  <div class="col-sm-12"><img src="<?php echo $location['image']; ?>" alt="<?php echo $location['name']; ?>" title="<?php echo $location['name']; ?>" class="img-thumbnail" /></div>
                   <?php } ?>
-                  <div class="col-sm-3"><strong><?php echo $location['name']; ?></strong><br />
+                  <div class="col-sm-12">
+                    <!-- <strong><?php echo $location['name']; ?></strong><br /> -->
                     <address>
                     <?php echo $location['address']; ?>
                     </address>
@@ -80,15 +82,14 @@
                     <a href="https://maps.google.com/maps?q=<?php echo urlencode($location['geocode']); ?>&hl=en&t=m&z=15" target="_blank" class="btn btn-info"><i class="fa fa-map-marker"></i> <?php echo $button_map; ?></a>
                     <?php } ?>
                   </div>
-                  <div class="col-sm-3"> <strong><?php echo $text_telephone; ?></strong><br>
-                    <?php echo $location['telephone']; ?><br />
-                    <br />
+                  <div class="col-sm-12">
+                    <i class="contact-info-icon fa fa-phone"></i><?php echo $location['telephone']; ?><br />
                     <?php if ($location['fax']) { ?>
                     <strong><?php echo $text_fax; ?></strong><br>
                     <?php echo $location['fax']; ?>
                     <?php } ?>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col-sm-12">
                     <?php if ($location['open']) { ?>
                     <strong><?php echo $text_open; ?></strong><br />
                     <?php echo $location['open']; ?><br />
@@ -104,6 +105,7 @@
             </div>
           </div>
           <?php } ?>
+        </div>
         </div>
       <?php } ?>
       </div>

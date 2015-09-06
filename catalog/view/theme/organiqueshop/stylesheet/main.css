@@ -947,6 +947,23 @@ input[type="color"].form-control {
   margin-bottom: 5px !important;
   background: transparent !important;
 }
+.owl-carousel .owl-prev {
+  left: 0 !important;
+}
+.owl-carousel .owl-next {
+  right: 0 !important;
+}
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  text-shadow: none !important;
+  background: #fff;
+  padding: 15px;
+  top: 41% !important;
+}
+.owl-carousel .owl-prev i.fa,
+.owl-carousel .owl-next i.fa {
+  margin-top: 0;
+}
 .owl-carousel .owl-wrapper-outer {
   border: 0;
   box-shadow: none;
@@ -1141,6 +1158,46 @@ footer .content-wrapper .contact-item .info address {
   font-size: 16px /* add PX (or original value) as backup */;
   font-size: 1rem;
 }
+.information-contact .control-label {
+  font-size: 14px /* add PX (or original value) as backup */;
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+.information-contact .branches {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.information-contact .branches .branches-info {
+  padding-left: 30px;
+  padding-top: 5px;
+}
+.information-contact .branches .panel-group .panel {
+  border: 0;
+  box-shadow: none;
+}
+.information-contact .branches .panel-group .panel .panel-heading {
+  background: #eeeff0;
+  border: 0;
+  padding: 0;
+}
+.information-contact .branches .panel-group .panel .panel-heading a {
+  display: block;
+  padding: 10px 15px;
+  color: #566065;
+}
+.information-contact .branches .panel-group .panel .panel-heading a .fa {
+  margin-right: 10px;
+}
+.information-contact .branches .panel-group .panel .panel-heading a.collapsed .fa-caret-down::before {
+  content: "\f0da";
+}
+.information-contact .branches .panel-group .panel .panel-body {
+  border: 0;
+  background: #eeeff0;
+}
+.information-contact .map {
+  margin-top: 10px;
+}
 .information-contact .map iframe {
   width: 100%;
   height: 300px;
@@ -1158,6 +1215,7 @@ footer .content-wrapper .contact-item .info address {
 .form-control {
   border-radius: 3px;
   box-shadow: none;
+  border: 1px solid #b9c0c4;
 }
 .form-control:focus {
   box-shadow: none;
