@@ -44,6 +44,7 @@ class ControllerCommonHeader extends Controller {
 		$data['text_product'] = $this->language->get('text_product');
 		$data['text_menu'] = $this->language->get('text_menu');
 		$data['text_contact'] = $this->language->get('text_contact');
+		$data['text_about'] = $this->language->get('text_about');
 		$data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
 		$data['text_shopping_cart'] = $this->language->get('text_shopping_cart');
 		$data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', 'SSL'), $this->customer->getFirstName(), $this->url->link('account/logout', '', 'SSL'));
@@ -72,6 +73,7 @@ class ControllerCommonHeader extends Controller {
 		$data['shopping_cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
 		$data['contact'] = $this->url->link('information/contact');
+		$data['about'] = $this->url->link('information/about');
 		$data['telephone'] = $this->config->get('config_telephone');
 
 		$status = true;

@@ -119,6 +119,7 @@
                     <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
                   <?php } ?>
                   <?php } ?>
+                  <li><a href="<?php echo $about; ?>"><?php echo $text_about; ?></a></li>
                   <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
                 </ul>
               </div>

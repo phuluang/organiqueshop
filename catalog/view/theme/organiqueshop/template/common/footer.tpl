@@ -2,7 +2,6 @@
     <div class="container">
       <div class="content-wrapper">
       <div class="row">
-        <?php if ($informations) { ?>
         <div class="col-sm-6 col-md-4">
           <h5><?php echo $text_contact; ?></h5>
           <div class="contact-item">
@@ -30,7 +29,6 @@
             </div>
           </div>
         </div>
-        <?php } ?>
         <div class="col-sm-6 col-md-4 facebook-plugin">
           <div class="facebook-plugin">
             <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Forganiqueshop&amp;width=293&amp;height=170&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:293px; height:170px;" allowTransparency="true"></iframe>

@@ -17,3 +17,4 @@ $_['text_checkout']      = 'Checkout';
 $_['text_search']        = 'Search';
 $_['text_all']           = 'Show All';
 $_['text_contact']       = 'Contact Us';
+$_['text_about']         = 'About Us';
