@@ -1209,6 +1209,64 @@ footer .content-wrapper .contact-item .info address {
 .information-contact .content-wrapper .form-horizontal .control-label {
   text-align: left;
 }
+.product-price {
+  border-bottom: 1px solid #dce0e1;
+}
+.product-price .new-price {
+  font-weight: 600;
+  color: #25aae1;
+}
+.thumbnail {
+  border: 0;
+}
+.product-detail {
+  padding: 30px;
+}
+.product-thumb-wrap {
+  padding: 30px;
+}
+.thumbnails {
+  margin-left: 0;
+}
+.thumbnails>li {
+  margin: 0;
+}
+.thumbnails .image-additional {
+  max-width: 100%;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+.thumbnails .image-additional .thumbnail {
+  border: 1px solid #dce0e1;
+  border-radius: 0;
+}
+.thumbnails .image-additional .thumbnail:hover {
+  border: 1px solid #25aae1;
+}
+.about-us-page {
+  padding: 0;
+}
+.about-us-page .about-row {
+  padding: 0;
+  margin: 0;
+}
+.about-us-page .about-img {
+  padding: 0;
+}
+.about-us-page .about-img img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.about-us-page .about-content {
+  padding: 30px;
+  line-height: 1.5em;
+  font-size: 18px /* add PX (or original value) as backup */;
+  font-size: 1.125rem;
+}
+.about-us-page .about-content h1 {
+  margin-bottom: 30px;
+}
 .btn-lg {
   border-radius: 3px;
 }
