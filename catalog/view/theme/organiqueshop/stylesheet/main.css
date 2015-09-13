@@ -956,7 +956,7 @@ input[type="color"].form-control {
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
   text-shadow: none !important;
-  background: #fff;
+  color: #fff !important;
   padding: 15px;
   top: 41% !important;
 }
@@ -1209,9 +1209,6 @@ footer .content-wrapper .contact-item .info address {
 .information-contact .content-wrapper .form-horizontal .control-label {
   text-align: left;
 }
-.product-price {
-  border-bottom: 1px solid #dce0e1;
-}
 .product-price .new-price {
   font-weight: 600;
   color: #25aae1;
@@ -1221,6 +1218,11 @@ footer .content-wrapper .contact-item .info address {
 }
 .product-detail {
   padding: 30px;
+}
+.product-detail .product-desc {
+  border-top: 1px solid #dce0e1;
+  margin-top: 15px;
+  padding-top: 15px;
 }
 .product-thumb-wrap {
   padding: 30px;
@@ -1242,6 +1244,25 @@ footer .content-wrapper .contact-item .info address {
 }
 .thumbnails .image-additional .thumbnail:hover {
   border: 1px solid #25aae1;
+}
+button.mfp-arrow {
+  color: #fff !important;
+  font-size: 48px /* add PX (or original value) as backup */;
+  font-size: 3rem;
+}
+button.mfp-arrow::before {
+  border: 0 !important;
+}
+button.mfp-arrow::after {
+  border: 0 !important;
+}
+button.mfp-arrow.mfp-arrow-left::before {
+  content: "\f104";
+  font-family: FontAwesome;
+}
+button.mfp-arrow.mfp-arrow-right::before {
+  content: "\f105";
+  font-family: FontAwesome;
 }
 .about-us-page {
   padding: 0;

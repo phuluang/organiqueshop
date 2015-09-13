@@ -210,7 +210,7 @@ input[type="color"].form-control
     right 0 !important
   .owl-prev, .owl-next
     text-shadow none !important
-    background white
+    color white !important
     padding 15px
     top 41% !important
     i.fa
@@ -416,7 +416,6 @@ footer
 
 //Product
 .product-price
-  border-bottom 1px solid c-light-gray2
   .new-price
     font-weight 600
     color c-blue
@@ -424,6 +423,10 @@ footer
   border 0
 .product-detail
   padding 30px
+  .product-desc
+    border-top 1px solid c-light-gray2
+    margin-top 15px
+    padding-top 15px
 .product-thumb-wrap
   padding 30px
 .thumbnails
@@ -439,6 +442,20 @@ footer
       border-radius 0
       &:hover
         border 1px solid c-blue
+
+button.mfp-arrow
+  color white !important
+  set-font-size(48px)
+  &::before
+    border 0 !important
+  &::after
+    border 0 !important
+  &.mfp-arrow-left::before
+    content "\f104"
+    font-family FontAwesome
+  &.mfp-arrow-right::before
+    content "\f105"
+    font-family FontAwesome
 
 //About Us
 .about-us-page
