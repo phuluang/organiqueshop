@@ -1209,6 +1209,11 @@ footer .content-wrapper .contact-item .info address {
 .information-contact .content-wrapper .form-horizontal .control-label {
   text-align: left;
 }
+@media (max-width: 1200px) {
+  .product-grid .product-thumb .caption {
+    min-height: 0;
+  }
+}
 .product-price .new-price {
   font-weight: 600;
   color: #25aae1;
