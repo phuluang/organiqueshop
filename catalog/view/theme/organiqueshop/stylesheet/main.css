@@ -1060,7 +1060,31 @@ footer .content-wrapper .contact-item .info address {
   margin: 0;
 }
 .powered {
+  position: relative;
   background: #222628;
+}
+.powered .footer-lang-switcher {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.powered .footer-lang-switcher img {
+  margin-right: 5px;
+}
+.powered .footer-lang-switcher i {
+  margin-left: 5px;
+}
+.powered .footer-lang-switcher .dropdown-toggle {
+  color: #dce0e1;
+}
+.powered .footer-lang-switcher .dropdown-menu {
+  bottom: 100%;
+  top: auto;
+  right: 0;
+  left: auto;
+}
+.powered .footer-lang-switcher .dropdown-menu li >a:hover {
+  background: #25aae1;
 }
 .powered p {
   margin: 0;
@@ -1217,6 +1241,7 @@ footer .content-wrapper .contact-item .info address {
 .product-price .new-price {
   font-weight: 600;
   color: #25aae1;
+  text-transform: capitalize;
 }
 .thumbnail {
   border: 0;

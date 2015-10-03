@@ -36,6 +36,8 @@ class ControllerCommonFooter extends Controller {
 			}
 		}
 
+		$data['language'] = $this->load->controller('common/language');
+		
 		$data['contact'] = $this->url->link('information/contact');
 		$data['return'] = $this->url->link('account/return/add', '', 'SSL');
 		$data['sitemap'] = $this->url->link('information/sitemap');

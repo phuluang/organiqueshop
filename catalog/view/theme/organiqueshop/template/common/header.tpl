@@ -46,7 +46,7 @@
   <div id="page">
   <div class="container">
   <div class="content-wrapper">
-    <!-- <nav id="top">
+    <nav id="top" class="hidden">
       <div class="container">
         <?php echo $currency; ?>
         <?php echo $language; ?>
@@ -73,7 +73,7 @@
           </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
     <header class="top-header">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4">

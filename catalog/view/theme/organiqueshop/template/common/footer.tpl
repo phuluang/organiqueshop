@@ -53,6 +53,9 @@
       <div class="powered">
         <div class="container">
           <p><?php echo $powered; ?></p>
+          <div class="footer-lang-switcher">
+            <?php echo $language; ?>
+          </div>
         </div>
       </div>
     </div>

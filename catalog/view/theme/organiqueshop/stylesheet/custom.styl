@@ -288,7 +288,26 @@ footer
         address
           margin 0
 .powered
+  position relative
   background c-dark-gray3
+  .footer-lang-switcher
+    position absolute
+    right 0
+    top 5px
+    img
+      margin-right 5px
+    i
+      margin-left 5px
+    .dropdown-toggle
+      color c-text-inverse
+    .dropdown-menu
+      bottom 100%
+      top auto
+      right 0
+      left auto
+      li
+        >a:hover
+          background c-blue
   p
     margin 0
     padding 15px 0
@@ -424,6 +443,7 @@ footer
   .new-price
     font-weight 600
     color c-blue
+    text-transform capitalize
 .thumbnail
   border 0
 .product-detail
