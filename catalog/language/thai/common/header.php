@@ -20,3 +20,6 @@ $_['text_logout']        = 'ออกจากระบบ';
 $_['text_checkout']      = 'สั่งซื้อสินค้า';
 $_['text_search']        = 'ค้นหา';
 $_['text_all']           = 'ดูทั้งหมดใน';
+$_['text_about']         = 'เกี่ยวกับเรา';
+$_['text_contact']       = 'ติดต่อเรา';
+$_['text_product']       = 'สินค้า';
