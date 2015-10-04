@@ -1,0 +1,15 @@
+---------- Date: 2015-10-04 00:30:16 ~ IP : ::1 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : /Users/phuluanghanpipat/Sites/organiqueshop/vqmod/xml/simple_blog_catalog.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : Opcrat
+
+File Name    : catalog/view/theme/*/template/common/footer.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php echo $special; ?>
+
+----------------------------------------------------------------------
+
+
