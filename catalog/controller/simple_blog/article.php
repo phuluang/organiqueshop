@@ -3,11 +3,12 @@
 		public function index() {
 			$this->language->load('simple_blog/article');
 
-			if($this->config->has('simple_blog_heading')) {
-				$this->document->setTitle($this->config->get('simple_blog_heading'));
-			} else {
-				$this->document->setTitle($this->language->get('heading_title'));
-			}
+			// if($this->config->has('simple_blog_heading')) {
+			// 	$this->document->setTitle($this->config->get('simple_blog_heading'));
+			// } else {
+			// 	$this->document->setTitle($this->language->get('heading_title'));
+			// }
+			$this->document->setTitle($this->language->get('heading_title'));
 
 			$this->load->model('simple_blog/article');
 
@@ -344,6 +345,12 @@
 				$data['breadcrumbs'][] = array(
 					'text'      => $this->language->get('heading_title'),
 					'href'      => $this->url->link('simple_blog/article'),
+					'separator' => ' :: '
+				);
+
+				$data['breadcrumbs'][] = array(
+					'text'      => $article_info['article_title'],
+					'href' 			=> $this->url->link('simple_blog/article/view', 'simple_blog_article_id=' . $article_info['simple_blog_article_id'], 'SSL'),				
 					'separator' => ' :: '
 				);
 

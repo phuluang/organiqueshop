@@ -1,9 +1,9 @@
 <?php
 // Heading
-$_['heading_title']					= 'Blog';
+$_['heading_title']					= 'บทความ';
 
 // Buttons
-$_['button_continue_reading']		= 'Read More';
+$_['button_continue_reading']		= 'อ่านต่อ';
 $_['button_submit']					= 'Submit';
 
 $_['text_date_format']				= 'F jS, Y';

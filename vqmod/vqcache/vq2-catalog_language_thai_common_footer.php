@@ -22,6 +22,7 @@ $_['text_order']        = 'ประวัติคำสั่งซื้อ';
 $_['text_wishlist']     = 'รายการโปรด';
 $_['text_newsletter']   = 'จดหมายข่าว';
 $_['text_payment']      = 'แจ้งการชำระเงิน';
+$_['text_follow_us']      = 'ติดตามเราได้ที่';
 $_['text_powered'] = '%s &copy; %s';
 
 				$_['text_simple_blog']   = 'Simple Blog';

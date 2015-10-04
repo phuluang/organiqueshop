@@ -316,3 +316,9 @@ admin/controller/catalog/product.php
 admin/language/english/catalog/product.php
 admin/view/template/catalog/product_list.tpl
 system/library/image.php
+catalog/language/thai/information/about.php
+admin/controller/localisation/language.php
+admin/language/english/localisation/language.php
+admin/view/template/localisation/language_list.tpl
+admin/view/template/localisation/language_form.tpl
+catalog/language/thai/simple_blog/article.php

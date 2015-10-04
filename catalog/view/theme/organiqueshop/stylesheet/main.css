@@ -944,7 +944,7 @@ input[type="color"].form-control {
   background: #1679a1;
 }
 .owl-carousel {
-  margin-bottom: 5px !important;
+  margin-bottom: 6px !important;
   background: transparent !important;
 }
 .owl-carousel .owl-prev {
@@ -1067,6 +1067,12 @@ footer .content-wrapper .contact-item .info address {
   position: absolute;
   right: 0;
   top: 5px;
+}
+.powered .footer-lang-switcher .btn-link:hover {
+  text-decoration: none;
+}
+.powered .footer-lang-switcher .btn-link:hover span {
+  text-decoration: underline;
 }
 .powered .footer-lang-switcher img {
   margin-right: 5px;
