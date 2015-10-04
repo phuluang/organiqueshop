@@ -1176,6 +1176,9 @@ footer .content-wrapper .contact-item .info address {
 }
 .product-thumb h4 a {
   color: #2b3033;
+  font-size: 14px /* add PX (or original value) as backup */;
+  font-size: 0.875rem;
+  line-height: 1.75em;
 }
 .featured-header {
   margin-bottom: 0;
