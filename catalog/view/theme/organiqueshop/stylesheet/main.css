@@ -1267,6 +1267,7 @@ footer .content-wrapper .contact-item .info address {
   border-top: 1px solid #dce0e1;
   margin-top: 15px;
   padding-top: 15px;
+  line-height: 1.9em;
 }
 .product-thumb-wrap {
   padding: 30px;
@@ -1333,7 +1334,8 @@ button.mfp-arrow.mfp-arrow-right::before {
   margin-bottom: 30px;
 }
 .article-info {
-  border-bottom: 0 !important;
+  border-bottom: 0;
+  padding: 15px;
 }
 .article-info .article-sub-title {
   border-bottom: 1px solid #dce0e1;
@@ -1356,6 +1358,11 @@ button.mfp-arrow.mfp-arrow-right::before {
   padding: 0;
   max-width: 100%;
   height: auto;
+}
+.article-info .article-description {
+  font-size: 16px /* add PX (or original value) as backup */;
+  font-size: 1rem;
+  line-height: 1.9em;
 }
 .article-info .article-description img {
   max-width: 100%;
@@ -1390,6 +1397,9 @@ button.mfp-arrow.mfp-arrow-right::before {
   font-size: 0.75rem;
   color: #25aae1;
 }
+.blog-item .article-description {
+  line-height: 1.9em;
+}
 .blog-item .article-sub-title {
   border: 0;
   margin-bottom: 10px;
@@ -1404,6 +1414,8 @@ button.mfp-arrow.mfp-arrow-right::before {
   border: 0;
   padding: 0;
   border-radius: 0;
+  max-width: 100%;
+  height: auto;
 }
 .blog-item .article-image-wrap .article-thumbnail-found {
   background: #eeeff0;

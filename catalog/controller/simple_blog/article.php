@@ -14,7 +14,7 @@
 
 			$this->load->model('tool/image');
 
-			$this->document->addStyle('catalog/view/theme/default/stylesheet/blog_custom.css');
+			// $this->document->addStyle('catalog/view/theme/default/stylesheet/blog_custom.css');
 
 			if($this->config->get('simple_blog_heading')) {
 				$data['heading_title'] = $this->config->get('simple_blog_heading');
@@ -157,7 +157,7 @@
 
 			$this->load->model('catalog/product');
 
-			$this->document->addStyle('catalog/view/theme/default/stylesheet/blog_custom.css');
+			// $this->document->addStyle('catalog/view/theme/default/stylesheet/blog_custom.css');
 
 			if(isset($this->request->get['simple_blog_article_id'])) {
 				$simple_blog_article_id = $this->request->get['simple_blog_article_id'];
@@ -350,7 +350,7 @@
 
 				$data['breadcrumbs'][] = array(
 					'text'      => $article_info['article_title'],
-					'href' 			=> $this->url->link('simple_blog/article/view', 'simple_blog_article_id=' . $article_info['simple_blog_article_id'], 'SSL'),				
+					'href' 			=> $this->url->link('simple_blog/article/view', 'simple_blog_article_id=' . $article_info['simple_blog_article_id'], 'SSL'),
 					'separator' => ' :: '
 				);
 

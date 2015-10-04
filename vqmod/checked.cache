@@ -322,3 +322,15 @@ admin/language/english/localisation/language.php
 admin/view/template/localisation/language_list.tpl
 admin/view/template/localisation/language_form.tpl
 catalog/language/thai/simple_blog/article.php
+admin/view/template/design/layout_form.tpl
+catalog/controller/module/simple_blog.php
+catalog/language/english/module/simple_blog.php
+catalog/language/thai/module/simple_blog.php
+catalog/view/theme/organiqueshop/template/module/simple_blog.tpl
+admin/controller/localisation/location.php
+admin/language/english/localisation/location.php
+admin/view/template/localisation/location_list.tpl
+admin/view/template/localisation/location_form.tpl
+catalog/language/english/common/maintenance.php
+catalog/language/thai/common/maintenance.php
+catalog/view/theme/organiqueshop/template/common/maintenance.tpl

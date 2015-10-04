@@ -76,11 +76,11 @@
 
                                     <?php if($article['featured_found']) { ?>
                         							<div class="article-description">
-                        								<?php echo $article['description']; ?>
+                        								<?php echo $article['description']; ?><a href="<?php echo $article['href']; ?>"><?php echo $button_continue_reading; ?></a>
                         							</div>
                         						<?php } else { ?>
                       							<div class="article-description">
-                      								<?php echo $article['description']; ?>
+                      								<?php echo $article['description']; ?><a href="<?php echo $article['href']; ?>"><?php echo $button_continue_reading; ?></a>
                       							</div>
           						              <?php } ?>
 
