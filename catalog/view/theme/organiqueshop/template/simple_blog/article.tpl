@@ -48,9 +48,11 @@
                                     <?php } ?>
                                   <?php } ?>
                                   <?php if(!$article['featured_found']) { ?>
-          							            <div class="article-thumbnail-found">
-                                        No Image
-                                    </div>
+                                    <a href="<?php echo $article['href']; ?>">
+            							            <div class="article-thumbnail-found">
+                                          No Image
+                                      </div>
+                                    </a>
           						            <?php } ?>
                                   </div>
                                   </div>

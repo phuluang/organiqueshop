@@ -1255,7 +1255,7 @@ footer .content-wrapper .contact-item .info address {
   border: 0;
 }
 .product-detail {
-  padding: 30px;
+  padding: 15px 30px 30px;
 }
 .product-detail .product-desc {
   border-top: 1px solid #dce0e1;
@@ -1358,7 +1358,7 @@ button.mfp-arrow.mfp-arrow-right::before {
 .blog-item {
   margin: 0 15px;
   padding: 30px 0;
-  border-bottom: 1px solid #eeeff0;
+  border-bottom: 1px solid #dce0e1;
 }
 .blog-item:first-child {
   padding-top: 15px;
