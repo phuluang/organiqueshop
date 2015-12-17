@@ -1162,7 +1162,8 @@ footer .content-wrapper .contact-item .info address {
   border: 2px solid #25aae1;
 }
 .product-thumb .price {
-  color: #495256;
+  color: #25aae1;
+  font-weight: 600;
 }
 .product-thumb .image a:hover {
   opacity: 1;

@@ -398,9 +398,9 @@
               <?php if ($product['price']) { ?>
               <p class="price">
                 <?php if (!$product['special']) { ?>
-                  <strong><?php echo $product['price']; ?></strong>
+                <?php echo $product['price']; ?>
                 <?php } else { ?>
-                <span class="price-new"><strong><?php echo $product['special']; ?></strong></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
                 <?php } ?>
                 <?php if ($product['tax']) { ?>
                 <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
