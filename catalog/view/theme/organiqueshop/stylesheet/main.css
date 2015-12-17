@@ -1251,10 +1251,6 @@ footer .content-wrapper .contact-item .info address {
 .information-contact .content-wrapper .form-horizontal .control-label {
   text-align: left;
 }
-.related-product-head {
-  border-top: 3px solid #dce0e1;
-  padding-top: 20px;
-}
 @media (max-width: 1200px) {
   .product-grid .product-thumb .caption {
     min-height: 0;
@@ -1316,6 +1312,10 @@ button.mfp-arrow.mfp-arrow-left::before {
 button.mfp-arrow.mfp-arrow-right::before {
   content: "\f105";
   font-family: FontAwesome;
+}
+.related-product-header {
+  border-top: 1px solid #dce0e1;
+  padding-top: 20px;
 }
 .about-us-page {
   padding: 0;

@@ -367,7 +367,7 @@
         </div>
       </div>
       <?php if ($products) { ?>
-      <h3 class="related-product-head"><?php echo $text_related; ?></h3>
+      <h3 class="related-product-header"><?php echo $text_related; ?></h3>
       <div class="row">
         <?php $i = 0; ?>
         <?php foreach ($products as $product) { ?>
