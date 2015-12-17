@@ -41,6 +41,10 @@
 <script src="<?php echo $script; ?>" type="text/javascript"></script>
 <?php } ?>
 <?php echo $google_analytics; ?>
+<!-- mod og:image para FB -->
+<!-- meta property="og:image" content="<?php echo $article['image']; ?>" -->
+<meta property="og:image" content="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/12373325_1069553863078973_4116914077783291347_n.jpg?oh=75434a4d365253c7ff6ab613e704b349&oe=56E3767B&__gda__=1457753387_43623d69588cc439c67d6191af3b5d70">
+<!-- mod og:image para FB -->
 </head>
 <body class="<?php echo $class; ?>">
   <div id="page">

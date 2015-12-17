@@ -30,8 +30,16 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-4 facebook-plugin">
+          <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
           <div class="facebook-plugin">
-            <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Forganiqueshop&amp;width=293&amp;height=170&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:293px; height:170px;" allowTransparency="true"></iframe>
+            <div class="fb-page" data-href="https://www.facebook.com/OrganiqueTH/" data-tabs="timeline" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/OrganiqueTH/"><a href="https://www.facebook.com/OrganiqueTH/">Organique</a></blockquote></div></div>
           </div>
         </div>
         <div class="col-sm-12 col-md-4 follow-us">
