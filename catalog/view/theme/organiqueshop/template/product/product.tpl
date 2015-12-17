@@ -383,7 +383,7 @@
             <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
             <div class="caption">
               <h4><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
-              <p><?php echo $product['description']; ?></p>
+              <p class="hidden"><?php echo $product['description']; ?></p>
               <?php if ($product['rating']) { ?>
               <div class="rating">
                 <?php for ($i = 1; $i <= 5; $i++) { ?>
@@ -398,9 +398,9 @@
               <?php if ($product['price']) { ?>
               <p class="price">
                 <?php if (!$product['special']) { ?>
-                <?php echo $product['price']; ?>
+                  <strong><?php echo $product['price']; ?></strong>
                 <?php } else { ?>
-                <span class="price-new"><?php echo $product['special']; ?></span> <span class="price-old"><?php echo $product['price']; ?></span>
+                <span class="price-new"><strong><?php echo $product['special']; ?></strong></span> <span class="price-old"><?php echo $product['price']; ?></span>
                 <?php } ?>
                 <?php if ($product['tax']) { ?>
                 <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
