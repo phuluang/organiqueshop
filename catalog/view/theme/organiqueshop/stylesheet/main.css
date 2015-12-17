@@ -1252,7 +1252,7 @@ footer .content-wrapper .contact-item .info address {
   text-align: left;
 }
 .related-product-head {
-  border-top: 1px solid #dce0e1;
+  border-top: 3px solid #dce0e1;
   padding-top: 20px;
 }
 @media (max-width: 1200px) {
