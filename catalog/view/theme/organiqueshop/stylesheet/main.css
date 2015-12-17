@@ -1313,7 +1313,7 @@ button.mfp-arrow.mfp-arrow-right::before {
   content: "\f105";
   font-family: FontAwesome;
 }
-.related-product-header {
+h3.related-product-header {
   border-top: 1px solid #dce0e1;
   padding-top: 20px;
 }
