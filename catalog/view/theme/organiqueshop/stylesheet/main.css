@@ -1251,6 +1251,9 @@ footer .content-wrapper .contact-item .info address {
 .information-contact .content-wrapper .form-horizontal .control-label {
   text-align: left;
 }
+.related-product-head {
+  border-top: 1px solid #dce0e1;
+}
 @media (max-width: 1200px) {
   .product-grid .product-thumb .caption {
     min-height: 0;
