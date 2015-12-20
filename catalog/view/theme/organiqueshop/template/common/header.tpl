@@ -16,8 +16,10 @@
 <?php if ($keywords) { ?>
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
+<?php if ($ogimage) { ?>
+<meta property="og:image" content="<?php echo $ogimage; ?>" />
+<?php } ?>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 <?php if ($icon) { ?>
 <link href="<?php echo $icon; ?>" rel="icon" />
 <?php } ?>

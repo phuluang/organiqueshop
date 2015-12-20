@@ -12,6 +12,7 @@ class ControllerCommonHeader extends Controller {
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
 		$data['keywords'] = $this->document->getKeywords();
+		$data['ogimage'] = $this->document->getOgimage();
 		$data['links'] = $this->document->getLinks();
 		$data['styles'] = $this->document->getStyles();
 		$data['scripts'] = $this->document->getScripts();
@@ -25,24 +26,6 @@ class ControllerCommonHeader extends Controller {
 		}
 
 		$data['name'] = $this->config->get('config_name');
-
-// Dynamic OG:image
-		/*if (isset($this->request->get['product_id'])) {
-         $product_id = (int)$this->request->get['product_id'];
-      } else {
-         $product_id = 0;
-      }
-
-    $this->load->model('catalog/product');
-    $product_info = $this->model_catalog_product->getProduct($product_id);
-    $this->data['product_info'] = $product_info;
-    if ($product_info['image']) {
-          $this->data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
-    } else {
-          $this->data['thumb'] = '';
-    }
-  	$this->data['images'] = array();*/
-// End Dynamic OG:image
 
 		if (is_file(DIR_IMAGE . $this->config->get('config_icon'))) {
 			$data['icon'] = $server . 'image/' . $this->config->get('config_icon');

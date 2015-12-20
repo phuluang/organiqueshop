@@ -3,6 +3,7 @@ class Document {
 	private $title;
 	private $description;
 	private $keywords;
+	private $ogimage;
 	private $links = array();
 	private $styles = array();
 	private $scripts = array();
@@ -29,6 +30,14 @@ class Document {
 
 	public function getKeywords() {
 		return $this->keywords;
+	}
+
+	public function setOgimage($ogimage) {
+		$this->ogimage = $ogimage;
+	}
+	
+	public function getOgimage() {
+		return $this->ogimage;
 	}
 
 	public function addLink($href, $rel) {

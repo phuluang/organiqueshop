@@ -216,10 +216,12 @@
 						$data['featured_found'] = 1;
 						$data['image'] = HTTP_SERVER . 'image/' . $article_info['featured_image'];
 						//$image = $this->model_tool_image->resize($result['featured_image'], 873, 585);
+						$this->document->setOgimage($this->model_tool_image->resize($article_info['featured_image'], 500, 300));
 					} else if($article_info['image']) {
 						$data['image'] = HTTP_SERVER . 'image/' . $article_info['image'];
 						$featured_found = '';
 						//$image = $this->model_tool_image->resize($result['image'], 873, 585);
+						$this->document->setOgimage($this->model_tool_image->resize($article_info['image'], 500, 300));
 					} else {
 						$data['image'] = '';
 						$featured_found = '';
