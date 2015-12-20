@@ -58,20 +58,20 @@
     							<?php } ?>
     						</div>
 
-                            <!-- <?php if($image) { ?>
+                            <?php if($image) { ?>
     							<?php if(isset($featured_found)) { ?>
-    								<div class="article-image">
+    								<div class="article-image hidden">
     									<img src="<?php echo $image; ?>" alt="<?php echo $article_info['article_title']; ?>" />
     								</div>
     							<?php } else { ?>
-    								<div class="article-thumbnail-image">
+    								<div class="article-thumbnail-image hidden">
     									<img src="<?php echo $image; ?>" alt="<?php echo $article_info['article_title']; ?>" height="100" width="100" />
     									<span class="article-description">
     										<?php echo html_entity_decode($article_info['description'], ENT_QUOTES, 'UTF-8'); ?>
     									</span>
     								</div>
     							<?php } ?>
-    						<?php } ?> -->
+    						<?php } ?>
 
                             <?php if(isset($featured_found)) { ?>
     							<div class="article-description">
