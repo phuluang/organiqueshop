@@ -17,6 +17,7 @@
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:image" content="http://www.designil.com/wp-content/uploads/2015/12/introduction-to-user-experience-amazon.jpg">
 <?php if ($icon) { ?>
 <link href="<?php echo $icon; ?>" rel="icon" />
 <?php } ?>
@@ -79,7 +80,7 @@
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4">
             <div id="logo" class="">
               <?php if ($logo) { ?>
-              <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
+              <a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" rel="logo" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" class="img-responsive" /></a>
               <?php } else { ?>
               <h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
               <?php } ?>
