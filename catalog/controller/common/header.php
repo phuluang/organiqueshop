@@ -27,7 +27,7 @@ class ControllerCommonHeader extends Controller {
 		$data['name'] = $this->config->get('config_name');
 
 // Dynamic OG:image
-		if (isset($this->request->get['product_id'])) {
+		/*if (isset($this->request->get['product_id'])) {
          $product_id = (int)$this->request->get['product_id'];
       } else {
          $product_id = 0;
@@ -41,8 +41,8 @@ class ControllerCommonHeader extends Controller {
     } else {
           $this->data['thumb'] = '';
     }
-  	$this->data['images'] = array();
-// End Dynamic OG:image		
+  	$this->data['images'] = array();*/
+// End Dynamic OG:image
 
 		if (is_file(DIR_IMAGE . $this->config->get('config_icon'))) {
 			$data['icon'] = $server . 'image/' . $this->config->get('config_icon');

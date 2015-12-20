@@ -17,13 +17,7 @@
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- mod og:image para FB -->
-<?php if ($thumb || $images) { ?>
-<meta property="og:image" content="<?php echo $thumb; ?>">
-<?php } else { ?>
-<meta property="og:image" content="<?php echo $logo; ?>">
-<?php } ?>
-<!-- mod og:image para FB -->
+
 <?php if ($icon) { ?>
 <link href="<?php echo $icon; ?>" rel="icon" />
 <?php } ?>
