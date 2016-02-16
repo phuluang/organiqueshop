@@ -48,15 +48,12 @@
 <body class="<?php echo $class; ?>">
   <div id="page">
   <div class="container">
-  <div class="content-wrapper">
-    <nav id="top" class="hidden">
-      <div class="container">
-        <?php echo $currency; ?>
-        <?php echo $language; ?>
+    <nav id="top" class="">
+      <div class="row">
+      <div class="col-sm-12">
         <div id="top-links" class="nav pull-right">
           <ul class="list-inline">
-            <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
-            <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
+            <li class="dropdown hidden"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <?php if ($logged) { ?>
                 <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
@@ -70,13 +67,25 @@
                 <?php } ?>
               </ul>
             </li>
-            <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-            <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-            <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+            <?php if ($logged) { ?>
+            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+            <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li>
+            <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+            <?php } else { ?>
+            <li class="hidden"><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+            <li><a href="<?php echo $login; ?>"><i class="fa fa-user"></i> <?php echo $text_login; ?></a></li>
+            <?php } ?>
+            <li class="hidden"><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
+            <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>" class="cart-button"><i class="fa fa-shopping-cart"></i> <span class=""><?php echo $text_shopping_cart; ?></span></a></li>
+            <li class="hidden"><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
           </ul>
         </div>
       </div>
+      </div>
     </nav>
+  <div class="content-wrapper">
     <header class="top-header">
         <div class="row">
           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4">
