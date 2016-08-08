@@ -18,3 +18,4 @@ $_['text_search']        = 'Search';
 $_['text_all']           = 'Show All';
 $_['text_contact']       = 'Contact Us';
 $_['text_about']         = 'About Us';
+$_['text_button_download']  = 'Download Catalogue';

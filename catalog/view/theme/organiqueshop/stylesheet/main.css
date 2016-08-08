@@ -898,6 +898,15 @@ input[type="color"].form-control {
   padding: 0;
   margin-left: 5px;
 }
+#top #top-links li .download-cat-button {
+  background: #25aae1;
+  color: #fff;
+  border: 0;
+  text-shadow: none;
+  padding: 8px 16px;
+  border-radius: 17px;
+  text-transform: uppercase;
+}
 #top #top-links a {
   background: #fff;
   text-shadow: none;

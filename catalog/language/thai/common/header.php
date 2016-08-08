@@ -23,3 +23,4 @@ $_['text_all']           = 'ดูทั้งหมดใน';
 $_['text_about']         = 'เกี่ยวกับเรา';
 $_['text_contact']       = 'ติดต่อเรา';
 $_['text_product']       = 'สินค้า';
+$_['text_button_download']  = 'ดาวน์โหลดแคตตาล็อก';

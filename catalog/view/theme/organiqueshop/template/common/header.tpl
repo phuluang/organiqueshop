@@ -48,11 +48,16 @@
 <body class="<?php echo $class; ?>">
   <div id="page">
   <div class="container">
-    <nav id="top" class="">
+    <nav id="top">
       <div class="row">
       <div class="col-sm-12">
         <div id="top-links" class="nav pull-right">
           <ul class="list-inline">
+            <li>
+              <form method="get" action="/image/catalog/pdf/Soap Catalog 2016 (All)-reduced3.zip">
+                <button class="download-cat-button" type="submit"><?php echo $text_button_download; ?></button>
+              </form>
+            </li>
             <li class="dropdown hidden"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-menu-right">
                 <?php if ($logged) { ?>
@@ -75,10 +80,10 @@
             <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
             <?php } else { ?>
             <li class="hidden"><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-            <li><a href="<?php echo $login; ?>"><i class="fa fa-user"></i> <?php echo $text_login; ?></a></li>
+            <li class="hidden"><a href="<?php echo $login; ?>"><i class="fa fa-user"></i> <?php echo $text_login; ?></a></li>
             <?php } ?>
             <li class="hidden"><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
-            <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>" class="cart-button"><i class="fa fa-shopping-cart"></i> <span class=""><?php echo $text_shopping_cart; ?></span></a></li>
+            <li class="hidden"><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>" class="cart-button"><i class="fa fa-shopping-cart"></i> <span class=""><?php echo $text_shopping_cart; ?></span></a></li>
             <li class="hidden"><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
           </ul>
         </div>

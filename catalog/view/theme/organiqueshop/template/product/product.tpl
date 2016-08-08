@@ -408,11 +408,11 @@
               </p>
               <?php } ?>
             </div>
-            <div class="button-group">
+            <!-- div class="button-group">
               <button class="add-to-cart-button" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>', '<?php echo $product['minimum']; ?>');"><span class=""><?php echo $button_cart; ?></span> <i class="fa fa-shopping-cart"></i></button>
               <button class="hidden" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
               <button class="hidden" type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
-            </div>
+            </div -->
           </div>
         </div>
         <?php if (($column_left && $column_right) && ($i % 2 == 0)) { ?>
