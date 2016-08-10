@@ -54,7 +54,7 @@
         <div id="top-links" class="nav pull-right">
           <ul class="list-inline">
             <li>
-              <form method="get" action="/image/catalog/pdf/Soap Catalog 2016 (All)-reduced3.zip">
+              <form method="get" action="/image/catalog/pdf/Soap Catalog 2016 (All)-reduced3.pdf">
                 <button class="download-cat-button" type="submit"><?php echo $text_button_download; ?></button>
               </form>
             </li>
